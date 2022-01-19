@@ -1,0 +1,234 @@
+Jan-19 08:48:37.915 [main] DEBUG nextflow.cli.Launcher - Setting HTTP proxy: [httpproxy.zit.med.uni-tuebingen.de, 88]
+Jan-19 08:48:37.978 [main] DEBUG nextflow.cli.Launcher - Setting HTTPS proxy: [httpproxy.zit.med.uni-tuebingen.de, 88]
+Jan-19 08:48:37.978 [main] DEBUG nextflow.cli.Launcher - Setting http proxy: [httpproxy.zit.med.uni-tuebingen.de, 88]
+Jan-19 08:48:37.978 [main] DEBUG nextflow.cli.Launcher - Setting https proxy: [httpproxy.zit.med.uni-tuebingen.de, 88]
+Jan-19 08:48:37.978 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/bacass -r 2.0.0 --input samplesheet-bacass.csv --kraken2db /home/sysgen/db/kraken/k2_pluspf_16gb_20210127.tar --annotation_tool dfast --assembly_type hybrid -profile docker --outdir results
+Jan-19 08:48:38.032 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.04.1
+Jan-19 08:48:39.684 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/sysgen/.nextflow/assets/nf-core/bacass/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/bacass.git
+Jan-19 08:48:39.711 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/sysgen/.nextflow/assets/nf-core/bacass/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/bacass.git
+Jan-19 08:48:40.197 [main] INFO  nextflow.cli.CmdRun - Launching `nf-core/bacass` [gigantic_banach] - revision: 959967364c [2.0.0]
+Jan-19 08:48:40.956 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/sysgen/.nextflow/assets/nf-core/bacass/nextflow.config
+Jan-19 08:48:40.959 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/sysgen/.nextflow/assets/nf-core/bacass/nextflow.config
+Jan-19 08:48:40.981 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Jan-19 08:48:41.523 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jan-19 08:48:41.524 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jan-19 08:48:41.529 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Jan-19 08:48:41.625 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [debug, test, test_long_miniasm, test_hybrid, test_long, docker, shifter, charliecloud, conda, singularity, test_dfast, test_full, podman]
+Jan-19 08:48:41.670 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/sysgen/.nextflow/plugins
+Jan-19 08:48:41.672 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jan-19 08:48:41.673 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
+Jan-19 08:48:41.680 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jan-19 08:48:41.681 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jan-19 08:48:41.683 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Jan-19 08:48:41.699 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jan-19 08:48:41.785 [main] DEBUG nextflow.Session - Session uuid: e402140f-4fc8-4e5e-af36-e1d282ab4844
+Jan-19 08:48:41.785 [main] DEBUG nextflow.Session - Run name: gigantic_banach
+Jan-19 08:48:41.786 [main] DEBUG nextflow.Session - Executor pool size: 112
+Jan-19 08:48:41.835 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.04.1 build 5556
+  Created: 14-05-2021 15:20 UTC (17:20 CEST)
+  System: Linux 4.15.0-163-generic
+  Runtime: Groovy 3.0.7 on OpenJDK 64-Bit Server VM 11.0.8-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 16991@supermicro02 [10.24.11.83]
+  CPUs: 112 - Mem: 1006.6 GB (25.7 GB) - Swap: 14.9 GB (9.8 GB)
+Jan-19 08:48:41.874 [main] DEBUG nextflow.Session - Work-dir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work [xfs]
+Jan-19 08:48:41.908 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jan-19 08:48:41.928 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-19 08:48:42.254 [main] DEBUG nextflow.Session - Session start invoked
+Jan-19 08:48:42.262 [main] DEBUG nextflow.trace.TraceFileObserver - Flow starting -- trace file: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/results/pipeline_info/execution_trace_2022-01-19_08-48-41.txt
+Jan-19 08:48:42.288 [main] DEBUG nextflow.Session - Using default localLib path: /home/sysgen/.nextflow/assets/nf-core/bacass/lib
+Jan-19 08:48:42.296 [main] DEBUG nextflow.Session - Adding to the classpath library: /home/sysgen/.nextflow/assets/nf-core/bacass/lib
+Jan-19 08:48:42.298 [main] DEBUG nextflow.Session - Adding to the classpath library: /home/sysgen/.nextflow/assets/nf-core/bacass/lib/nfcore_external_java_deps.jar
+Jan-19 08:48:43.803 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-19 08:48:44.103 [main] INFO  nextflow.Nextflow - 
+
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/bacass v2.0.0[0m
+-[2m----------------------------------------------------[0m-
+[1mCore Nextflow options[0m
+  [0;34mrevision       : [0;32m2.0.0[0m
+  [0;34mrunName        : [0;32mgigantic_banach[0m
+  [0;34mcontainerEngine: [0;32mdocker[0m
+  [0;34mlaunchDir      : [0;32m/home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly[0m
+  [0;34mworkDir        : [0;32m/home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work[0m
+  [0;34mprojectDir     : [0;32m/home/sysgen/.nextflow/assets/nf-core/bacass[0m
+  [0;34muserName       : [0;32msysgen[0m
+  [0;34mprofile        : [0;32mdocker[0m
+  [0;34mconfigFiles    : [0;32m/home/sysgen/.nextflow/assets/nf-core/bacass/nextflow.config[0m
+
+[1mInput/output options[0m
+  [0;34minput          : [0;32msamplesheet-bacass.csv[0m
+  [0;34moutdir         : [0;32mresults[0m
+
+[1mContamination Screening[0m
+  [0;34mkraken2db      : [0;32m/home/sysgen/db/kraken/k2_pluspf_16gb_20210127.tar[0m
+
+[1mAssembly parameters[0m
+  [0;34massembly_type  : [0;32mhybrid[0m
+
+[1mAnnotation[0m
+  [0;34mannotation_tool: [0;32mdfast[0m
+  [0;34mdfast_config   : [0;32m/home/sysgen/.nextflow/assets/nf-core/bacass/assets/test_config_dfast.py[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+If you use nf-core/bacass for your analysis please cite:
+
+* The pipeline
+  https://doi.org/10.5281/zenodo.2669428
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/nf-core/bacass/blob/master/CITATIONS.md
+-[2m----------------------------------------------------[0m-
+Jan-19 08:48:50.358 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC, MULTIQC, UNICYCLER, MINIMAP2_POLISH, PYCOQC, SAMTOOLS_SORT, SKEWER, PROKKA, MINIASM, KRAKEN2_KRAKEN2, QUAST, KRAKEN2_LONG, KRAKEN2_DB_PREPARATION, NANOPOLISH, KRAKEN2, GET_SOFTWARE_VERSIONS, RACON, MINIMAP2_CONSENSUS, MINIMAP2_ALIGN, CANU, MEDAKA, PORECHOP, NANOPLOT, SAMTOOLS_INDEX, DFAST
+Jan-19 08:48:50.603 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches label `process_medium` for process with name NFCORE_BACASS:BACASS:FASTQC
+Jan-19 08:48:50.609 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 08:48:50.610 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 08:48:50.616 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-19 08:48:50.625 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=112; memory=1006.6 GB; capacity=112; pollInterval=100ms; dumpInterval=5m
+Jan-19 08:48:50.731 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches label `process_medium` for process with name NFCORE_BACASS:BACASS:SKEWER
+Jan-19 08:48:50.732 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 08:48:50.733 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 08:48:50.748 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches label `process_low` for process with name NFCORE_BACASS:BACASS:NANOPLOT
+Jan-19 08:48:50.750 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 08:48:50.751 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 08:48:50.765 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches label `process_medium` for process with name NFCORE_BACASS:BACASS:PYCOQC
+Jan-19 08:48:50.766 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 08:48:50.767 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 08:48:50.784 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches label `process_medium` for process with name NFCORE_BACASS:BACASS:PORECHOP
+Jan-19 08:48:50.786 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 08:48:50.786 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 08:48:50.815 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches label `process_high` for process with name NFCORE_BACASS:BACASS:UNICYCLER
+Jan-19 08:48:50.816 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_long` matches label `process_long` for process with name NFCORE_BACASS:BACASS:UNICYCLER
+Jan-19 08:48:50.816 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high_memory` matches label `process_high_memory` for process with name NFCORE_BACASS:BACASS:UNICYCLER
+Jan-19 08:48:50.816 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:error_retry` matches label `error_retry` for process with name NFCORE_BACASS:BACASS:UNICYCLER
+Jan-19 08:48:50.817 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 08:48:50.817 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 08:48:50.832 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches label `process_low` for process with name NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION
+Jan-19 08:48:50.834 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 08:48:50.834 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 08:48:50.846 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches label `process_high` for process with name NFCORE_BACASS:BACASS:KRAKEN2
+Jan-19 08:48:50.847 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_long` matches label `process_long` for process with name NFCORE_BACASS:BACASS:KRAKEN2
+Jan-19 08:48:50.847 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high_memory` matches label `process_high_memory` for process with name NFCORE_BACASS:BACASS:KRAKEN2
+Jan-19 08:48:50.849 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 08:48:50.849 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 08:48:50.870 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches label `process_high` for process with name NFCORE_BACASS:BACASS:KRAKEN2_LONG
+Jan-19 08:48:50.870 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_long` matches label `process_long` for process with name NFCORE_BACASS:BACASS:KRAKEN2_LONG
+Jan-19 08:48:50.870 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high_memory` matches label `process_high_memory` for process with name NFCORE_BACASS:BACASS:KRAKEN2_LONG
+Jan-19 08:48:50.872 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 08:48:50.872 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 08:48:50.903 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches label `process_medium` for process with name NFCORE_BACASS:BACASS:QUAST
+Jan-19 08:48:50.905 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 08:48:50.906 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 08:48:50.925 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches label `process_medium` for process with name NFCORE_BACASS:BACASS:DFAST
+Jan-19 08:48:50.930 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 08:48:50.932 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 08:48:50.971 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 08:48:50.971 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 08:48:51.018 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches label `process_medium` for process with name NFCORE_BACASS:BACASS:MULTIQC
+Jan-19 08:48:51.019 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 08:48:51.020 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 08:48:51.031 [main] DEBUG nextflow.extension.CH - Bridging dataflow queue=DataflowQueue(queue=[])
+Jan-19 08:48:51.034 [main] DEBUG nextflow.extension.CH - Bridging dataflow queue=DataflowQueue(queue=[])
+Jan-19 08:48:51.034 [main] DEBUG nextflow.extension.CH - Bridging dataflow queue=DataflowQueue(queue=[])
+Jan-19 08:48:51.034 [main] DEBUG nextflow.extension.CH - Bridging dataflow queue=DataflowQueue(queue=[])
+Jan-19 08:48:51.035 [main] DEBUG nextflow.Session - Ignite dataflow network (21)
+Jan-19 08:48:51.046 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:FASTQC
+Jan-19 08:48:51.048 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:SKEWER
+Jan-19 08:48:51.048 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:NANOPLOT
+Jan-19 08:48:51.048 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:PYCOQC
+Jan-19 08:48:51.049 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:PORECHOP
+Jan-19 08:48:51.053 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:UNICYCLER
+Jan-19 08:48:51.056 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION
+Jan-19 08:48:51.056 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:KRAKEN2
+Jan-19 08:48:51.056 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:KRAKEN2_LONG
+Jan-19 08:48:51.056 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:QUAST
+Jan-19 08:48:51.056 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:DFAST
+Jan-19 08:48:51.056 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:GET_SOFTWARE_VERSIONS
+Jan-19 08:48:51.058 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:MULTIQC
+Jan-19 08:48:51.059 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Jan-19 08:48:51.060 [main] DEBUG nextflow.Session - Session await
+Jan-19 08:48:51.317 [Actor Thread 6] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.002 s; external sort time: 0.025 s; total time: 0.027 s
+Jan-19 08:48:51.327 [Actor Thread 6] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /tmp/a938744101fcc19ac3c3796a65915a9d.collect-file
+Jan-19 08:48:51.342 [Actor Thread 6] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-5740245592786926266
+Jan-19 08:48:51.372 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 08:48:51.382 [Task submitter] INFO  nextflow.Session - [b6/5ee3ce] Submitted process > NFCORE_BACASS:BACASS:NANOPLOT (NS45)
+Jan-19 08:48:51.415 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 08:48:51.416 [Task submitter] INFO  nextflow.Session - [d3/784db9] Submitted process > NFCORE_BACASS:BACASS:PORECHOP (BioCat)
+Jan-19 08:48:51.429 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 08:48:51.429 [Task submitter] INFO  nextflow.Session - [b8/b8c971] Submitted process > NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)
+Jan-19 08:48:51.440 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 08:48:51.441 [Task submitter] INFO  nextflow.Session - [eb/15cf32] Submitted process > NFCORE_BACASS:BACASS:PORECHOP (NS45)
+Jan-19 08:48:51.451 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 08:48:51.452 [Task submitter] INFO  nextflow.Session - [75/caa332] Submitted process > NFCORE_BACASS:BACASS:NANOPLOT (BioCat)
+Jan-19 08:48:51.460 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 08:48:51.461 [Task submitter] INFO  nextflow.Session - [07/523c9a] Submitted process > NFCORE_BACASS:BACASS:SKEWER (BioCat)
+Jan-19 08:48:51.472 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 08:48:51.473 [Task submitter] INFO  nextflow.Session - [0c/c653c6] Submitted process > NFCORE_BACASS:BACASS:FASTQC (BioCat)
+Jan-19 08:48:51.484 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 08:48:51.485 [Task submitter] INFO  nextflow.Session - [ae/09f3ab] Submitted process > NFCORE_BACASS:BACASS:FASTQC (NS45)
+Jan-19 08:48:51.493 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 08:48:51.495 [Task submitter] INFO  nextflow.Session - [f8/b60a7c] Submitted process > NFCORE_BACASS:BACASS:SKEWER (NS45)
+Jan-19 08:49:51.577 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: NFCORE_BACASS:BACASS:NANOPLOT (NS45); status: COMPLETED; exit: 0; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/b6/5ee3ce889e000a378cc359d94da18a]
+Jan-19 08:49:51.612 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'NFCORE_BACASS:BACASS:NANOPLOT (NS45)'
+
+Caused by:
+  Missing output file(s) `*.png` expected by process `NFCORE_BACASS:BACASS:NANOPLOT (NS45)`
+
+Command executed:
+
+  NanoPlot \
+       \
+      -t 2 \
+      --fastq 2111-DK-l1-001.fastq
+  echo $(NanoPlot --version 2>&1) | sed 's/^.*NanoPlot //; s/ .*$//' > nanoplot.version.txt
+
+Command exit status:
+  0
+
+Command output:
+  (empty)
+
+Work dir:
+  /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/b6/5ee3ce889e000a378cc359d94da18a
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Jan-19 08:49:51.688 [Task monitor] INFO  nextflow.Session - Execution cancelled -- Finishing pending tasks before exit
+Jan-19 08:49:51.706 [main] DEBUG nextflow.Session - Session await > all process finished
+Jan-19 08:50:18.872 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: NFCORE_BACASS:BACASS:FASTQC (BioCat); status: COMPLETED; exit: 0; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/0c/c653c615249feb3ed302be0dfbd0e2]
+Jan-19 08:50:18.912 [Task monitor] DEBUG n.util.BlockingThreadExecutorFactory - Thread pool name=FileTransfer; maxThreads=336; maxQueueSize=1008; keepAlive=1m
+Jan-19 08:50:19.002 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: NFCORE_BACASS:BACASS:FASTQC (NS45); status: COMPLETED; exit: 0; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/ae/09f3abd23321176f059586a3327517]
+Jan-19 08:50:26.449 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: NFCORE_BACASS:BACASS:NANOPLOT (BioCat); status: COMPLETED; exit: 0; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/75/caa332172d1ed4f6c4b2e14bd64398]
+Jan-19 08:50:53.047 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127); status: COMPLETED; exit: 0; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/b8/b8c97168af9a28aea8197b307f2254]
+Jan-19 08:53:50.769 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 4 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: NFCORE_BACASS:BACASS:PORECHOP (BioCat); status: RUNNING; exit: -; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/d3/784db9aa45d4fc2b6b565c880481e7]
+~> TaskHandler[id: 8; name: NFCORE_BACASS:BACASS:PORECHOP (NS45); status: RUNNING; exit: -; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/eb/15cf324ea51f9e0625d7c324f72a9b]
+~> TaskHandler[id: 4; name: NFCORE_BACASS:BACASS:SKEWER (BioCat); status: RUNNING; exit: -; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/07/523c9affedb40a86567a21c0323832]
+~> TaskHandler[id: 5; name: NFCORE_BACASS:BACASS:SKEWER (NS45); status: RUNNING; exit: -; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/f8/b60a7c88c177ec3d2a795dd3872654]
+Jan-19 08:55:14.931 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: NFCORE_BACASS:BACASS:PORECHOP (NS45); status: COMPLETED; exit: 0; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/eb/15cf324ea51f9e0625d7c324f72a9b]
+Jan-19 08:58:50.855 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 3 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: NFCORE_BACASS:BACASS:PORECHOP (BioCat); status: RUNNING; exit: -; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/d3/784db9aa45d4fc2b6b565c880481e7]
+~> TaskHandler[id: 4; name: NFCORE_BACASS:BACASS:SKEWER (BioCat); status: RUNNING; exit: -; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/07/523c9affedb40a86567a21c0323832]
+~> TaskHandler[id: 5; name: NFCORE_BACASS:BACASS:SKEWER (NS45); status: RUNNING; exit: -; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/f8/b60a7c88c177ec3d2a795dd3872654]
+Jan-19 08:59:42.031 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: NFCORE_BACASS:BACASS:PORECHOP (BioCat); status: COMPLETED; exit: 0; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/d3/784db9aa45d4fc2b6b565c880481e7]
+Jan-19 09:00:18.671 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: NFCORE_BACASS:BACASS:SKEWER (BioCat); status: COMPLETED; exit: 0; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/07/523c9affedb40a86567a21c0323832]
+Jan-19 09:00:38.752 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: NFCORE_BACASS:BACASS:SKEWER (NS45); status: COMPLETED; exit: 0; error: -; workDir: /home/sysgen/Desktop/ncct-projects/2201-Kostner-Assembly/work/f8/b60a7c88c177ec3d2a795dd3872654]
+Jan-19 09:00:38.768 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jan-19 09:00:38.774 [main] INFO  nextflow.Nextflow - -[0;35m[nf-core/bacass][0;31m Pipeline completed with errors[0m-
+Jan-19 09:00:39.079 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=7; failedCount=2; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=5h 43m 47s; failedDuration=4m 38s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=9; peakCpus=54; peakMemory=51 GB; ]
+Jan-19 09:00:39.080 [main] DEBUG nextflow.trace.TraceFileObserver - Flow completing -- flushing trace file
+Jan-19 09:00:39.083 [main] DEBUG nextflow.trace.ReportObserver - Flow completing -- rendering html report
+Jan-19 09:00:39.156 [main] DEBUG nextflow.trace.ReportObserver - Execution report summary data:
+  [{"cpuUsage":{"mean":38.58,"min":33.95,"q1":36.26,"q2":38.58,"q3":40.89,"max":43.2,"minLabel":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","maxLabel":"NFCORE_BACASS:BACASS:NANOPLOT (BioCat)","q1Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q2Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q3Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)"},"process":"NANOPLOT","mem":{"mean":1008068608,"min":740306944,"q1":874187776,"q2":1008068608,"q3":1141949440,"max":1275830272,"minLabel":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","maxLabel":"NFCORE_BACASS:BACASS:NANOPLOT (BioCat)","q1Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q2Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q3Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)"},"memUsage":{"mean":93.88,"min":68.95,"q1":81.42,"q2":93.88,"q3":106.35,"max":118.82,"minLabel":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","maxLabel":"NFCORE_BACASS:BACASS:NANOPLOT (BioCat)","q1Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q2Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q3Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)"},"timeUsage":{"mean":1.93,"min":1.44,"q1":1.69,"q2":1.93,"q3":2.17,"max":2.42,"minLabel":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","maxLabel":"NFCORE_BACASS:BACASS:NANOPLOT (BioCat)","q1Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q2Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q3Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)"},"vmem":{"mean":45792251904,"min":36060356608,"q1":40926304256,"q2":45792251904,"q3":50658199552,"max":55524147200,"minLabel":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","maxLabel":"NFCORE_BACASS:BACASS:NANOPLOT (BioCat)","q1Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q2Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q3Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)"},"reads":{"mean":416648360,"min":208736905,"q1":312692632.5,"q2":416648360,"q3":520604087.5,"max":624559815,"minLabel":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","maxLabel":"NFCORE_BACASS:BACASS:NANOPLOT (BioCat)","q1Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q2Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q3Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)"},"cpu":{"mean":77.15,"min":67.9,"q1":72.53,"q2":77.15,"q3":81.78,"max":86.4,"minLabel":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","maxLabel":"NFCORE_BACASS:BACASS:NANOPLOT (BioCat)","q1Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q2Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q3Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)"},"time":{"mean":69500,"min":52000,"q1":60750,"q2":69500,"q3":78250,"max":87000,"minLabel":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","maxLabel":"NFCORE_BACASS:BACASS:NANOPLOT (BioCat)","q1Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q2Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q3Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)"},"writes":{"mean":4934823.5,"min":4681307,"q1":4808065.25,"q2":4934823.5,"q3":5061581.75,"max":5188340,"minLabel":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","maxLabel":"NFCORE_BACASS:BACASS:NANOPLOT (BioCat)","q1Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q2Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)","q3Label":"NFCORE_BACASS:BACASS:NANOPLOT (NS45)"}},{"cpuUsage":{"mean":23.13,"min":23.04,"q1":23.08,"q2":23.13,"q3":23.17,"max":23.21,"minLabel":"NFCORE_BACASS:BACASS:FASTQC (NS45)","maxLabel":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","q1Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)","q2Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)","q3Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)"},"process":"FASTQC","mem":{"mean":1547112448,"min":1543213056,"q1":1545162752,"q2":1547112448,"q3":1549062144,"max":1551011840,"minLabel":"NFCORE_BACASS:BACASS:FASTQC (NS45)","maxLabel":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","q1Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)","q2Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)","q3Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)"},"memUsage":{"mean":18.01,"min":17.97,"q1":17.99,"q2":18.01,"q3":18.03,"max":18.06,"minLabel":"NFCORE_BACASS:BACASS:FASTQC (NS45)","maxLabel":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","q1Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)","q2Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)","q3Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)"},"timeUsage":{"mean":0.27,"min":0.27,"q1":0.27,"q2":0.27,"q3":0.27,"max":0.27,"minLabel":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","maxLabel":"NFCORE_BACASS:BACASS:FASTQC (NS45)","q1Label":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","q2Label":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","q3Label":"NFCORE_BACASS:BACASS:FASTQC (BioCat)"},"vmem":{"mean":5314965504,"min":5314965504,"q1":5314965504,"q2":5314965504,"q3":5314965504,"max":5314965504,"minLabel":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","maxLabel":"NFCORE_BACASS:BACASS:FASTQC (NS45)","q1Label":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","q2Label":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","q3Label":"NFCORE_BACASS:BACASS:FASTQC (BioCat)"},"reads":{"mean":439516230.5,"min":439514610,"q1":439515420.25,"q2":439516230.5,"q3":439517040.75,"max":439517851,"minLabel":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","maxLabel":"NFCORE_BACASS:BACASS:FASTQC (NS45)","q1Label":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","q2Label":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","q3Label":"NFCORE_BACASS:BACASS:FASTQC (BioCat)"},"cpu":{"mean":185,"min":184.3,"q1":184.65,"q2":185,"q3":185.35,"max":185.7,"minLabel":"NFCORE_BACASS:BACASS:FASTQC (NS45)","maxLabel":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","q1Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)","q2Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)","q3Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)"},"time":{"mean":78000,"min":78000,"q1":78000,"q2":78000,"q3":78000,"max":78000,"minLabel":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","maxLabel":"NFCORE_BACASS:BACASS:FASTQC (NS45)","q1Label":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","q2Label":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","q3Label":"NFCORE_BACASS:BACASS:FASTQC (BioCat)"},"writes":{"mean":4280085.5,"min":4279997,"q1":4280041.25,"q2":4280085.5,"q3":4280129.75,"max":4280174,"minLabel":"NFCORE_BACASS:BACASS:FASTQC (NS45)","maxLabel":"NFCORE_BACASS:BACASS:FASTQC (BioCat)","q1Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)","q2Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)","q3Label":"NFCORE_BACASS:BACASS:FASTQC (NS45)"}},{"cpuUsage":{"mean":37.35,"min":37.35,"q1":37.35,"q2":37.35,"q3":37.35,"max":37.35,"minLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","maxLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q1Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q2Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q3Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)"},"process":"KRAKEN2_DB_PREPARATION","mem":{"mean":5398528,"min":5398528,"q1":5398528,"q2":5398528,"q3":5398528,"max":5398528,"minLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","maxLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q1Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q2Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q3Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)"},"memUsage":{"mean":0.5,"min":0.5,"q1":0.5,"q2":0.5,"q3":0.5,"max":0.5,"minLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","maxLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q1Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q2Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q3Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)"},"timeUsage":{"mean":3.15,"min":3.15,"q1":3.15,"q2":3.15,"q3":3.15,"max":3.15,"minLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","maxLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q1Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q2Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q3Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)"},"vmem":{"mean":8171520,"min":8171520,"q1":8171520,"q2":8171520,"q3":8171520,"max":8171520,"minLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","maxLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q1Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q2Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q3Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)"},"reads":{"mean":16028551510,"min":16028551510,"q1":16028551510,"q2":16028551510,"q3":16028551510,"max":16028551510,"minLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","maxLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q1Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q2Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q3Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)"},"cpu":{"mean":74.7,"min":74.7,"q1":74.7,"q2":74.7,"q3":74.7,"max":74.7,"minLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","maxLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q1Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q2Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q3Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)"},"time":{"mean":113516,"min":113516,"q1":113516,"q2":113516,"q3":113516,"max":113516,"minLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","maxLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q1Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q2Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q3Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)"},"writes":{"mean":16028415166,"min":16028415166,"q1":16028415166,"q2":16028415166,"q3":16028415166,"max":16028415166,"minLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","maxLabel":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q1Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q2Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)","q3Label":"NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (k2_pluspf_16gb_20210127)"}},{"cpuUsage":{"mean":29.92,"min":28.74,"q1":29.33,"q2":29.92,"q3":30.51,"max":31.1,"minLabel":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","maxLabel":"NFCORE_BACASS:BACASS:PORECHOP (BioCat)","q1Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q2Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q3Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)"},"process":"PORECHOP","mem":{"mean":997404672,"min":667258880,"q1":832331776,"q2":997404672,"q3":1162477568,"max":1327550464,"minLabel":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","maxLabel":"NFCORE_BACASS:BACASS:PORECHOP (BioCat)","q1Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q2Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q3Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)"},"memUsage":{"mean":11.61,"min":7.77,"q1":9.69,"q2":11.61,"q3":13.53,"max":15.45,"minLabel":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","maxLabel":"NFCORE_BACASS:BACASS:PORECHOP (BioCat)","q1Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q2Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q3Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)"},"timeUsage":{"mean":1.76,"min":1.3,"q1":1.53,"q2":1.76,"q3":2,"max":2.23,"minLabel":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","maxLabel":"NFCORE_BACASS:BACASS:PORECHOP (BioCat)","q1Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q2Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q3Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)"},"vmem":{"mean":1858865152,"min":1528344576,"q1":1693604864,"q2":1858865152,"q3":2024125440,"max":2189385728,"minLabel":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","maxLabel":"NFCORE_BACASS:BACASS:PORECHOP (BioCat)","q1Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q2Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q3Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)"},"reads":{"mean":739080742,"min":324600901,"q1":531840821.5,"q2":739080742,"q3":946320662.5,"max":1153560583,"minLabel":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","maxLabel":"NFCORE_BACASS:BACASS:PORECHOP (BioCat)","q1Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q2Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q3Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)"},"cpu":{"mean":239.35,"min":229.9,"q1":234.63,"q2":239.35,"q3":244.08,"max":248.8,"minLabel":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","maxLabel":"NFCORE_BACASS:BACASS:PORECHOP (BioCat)","q1Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q2Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q3Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)"},"time":{"mean":508000,"min":374000,"q1":441000,"q2":508000,"q3":575000,"max":642000,"minLabel":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","maxLabel":"NFCORE_BACASS:BACASS:PORECHOP (BioCat)","q1Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q2Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q3Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)"},"writes":{"mean":551899524.5,"min":241338447,"q1":396618985.75,"q2":551899524.5,"q3":707180063.25,"max":862460602,"minLabel":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","maxLabel":"NFCORE_BACASS:BACASS:PORECHOP (BioCat)","q1Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q2Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)","q3Label":"NFCORE_BACASS:BACASS:PORECHOP (NS45)"}},{"cpuUsage":{"mean":13.72,"min":13.69,"q1":13.7,"q2":13.72,"q3":13.73,"max":13.75,"minLabel":"NFCORE_BACASS:BACASS:SKEWER (NS45)","maxLabel":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q1Label":"NFCORE_BACASS:BACASS:SKEWER (NS45)","q2Label":"NFCORE_BACASS:BACASS:SKEWER (NS45)","q3Label":"NFCORE_BACASS:BACASS:SKEWER (NS45)"},"process":"SKEWER","mem":{"mean":13285376,"min":13221888,"q1":13253632,"q2":13285376,"q3":13317120,"max":13348864,"minLabel":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","maxLabel":"NFCORE_BACASS:BACASS:SKEWER (NS45)","q1Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q2Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q3Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)"},"memUsage":{"mean":0.15,"min":0.15,"q1":0.15,"q2":0.15,"q3":0.16,"max":0.16,"minLabel":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","maxLabel":"NFCORE_BACASS:BACASS:SKEWER (NS45)","q1Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q2Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q3Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)"},"timeUsage":{"mean":2.39,"min":2.36,"q1":2.38,"q2":2.39,"q3":2.41,"max":2.43,"minLabel":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","maxLabel":"NFCORE_BACASS:BACASS:SKEWER (NS45)","q1Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q2Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q3Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)"},"vmem":{"mean":585465856,"min":585465856,"q1":585465856,"q2":585465856,"q3":585465856,"max":585465856,"minLabel":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","maxLabel":"NFCORE_BACASS:BACASS:SKEWER (NS45)","q1Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q2Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q3Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)"},"reads":{"mean":3045315981,"min":3045315980,"q1":3045315980.5,"q2":3045315981,"q3":3045315981.5,"max":3045315982,"minLabel":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","maxLabel":"NFCORE_BACASS:BACASS:SKEWER (NS45)","q1Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q2Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q3Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)"},"cpu":{"mean":109.75,"min":109.5,"q1":109.63,"q2":109.75,"q3":109.88,"max":110,"minLabel":"NFCORE_BACASS:BACASS:SKEWER (NS45)","maxLabel":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q1Label":"NFCORE_BACASS:BACASS:SKEWER (NS45)","q2Label":"NFCORE_BACASS:BACASS:SKEWER (NS45)","q3Label":"NFCORE_BACASS:BACASS:SKEWER (NS45)"},"time":{"mean":689000,"min":679000,"q1":684000,"q2":689000,"q3":694000,"max":699000,"minLabel":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","maxLabel":"NFCORE_BACASS:BACASS:SKEWER (NS45)","q1Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q2Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q3Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)"},"writes":{"mean":3010625332,"min":3010625326,"q1":3010625329,"q2":3010625332,"q3":3010625335,"max":3010625338,"minLabel":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","maxLabel":"NFCORE_BACASS:BACASS:SKEWER (NS45)","q1Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q2Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)","q3Label":"NFCORE_BACASS:BACASS:SKEWER (BioCat)"}}]
+Jan-19 09:00:40.285 [main] DEBUG nextflow.trace.TimelineObserver - Flow completing -- rendering html timeline
+Jan-19 09:00:40.796 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Jan-19 09:00:40.826 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
