@@ -16,9 +16,9 @@ process UNICYCLER {
 
     conda (params.enable_conda ? 'bioconda::unicycler=0.4.8' : null)
     if (workflow.containerEngine == 'singularity' && !params.singularity_pull_docker_container) {
-        container "https://depot.galaxyproject.org/singularity/unicycler:0.4.8--py38h8162308_3"
+        container "https://depot.galaxyproject.org/singularity/unicycler:0.5.0--py39h2add14b_2"
     } else {
-        container "quay.io/biocontainers/unicycler:0.4.8--py38h8162308_3"
+        container "quay.io/biocontainers/unicycler:0.5.0--py310hc8f18ef_2"
     }
 
     input:
